@@ -1,0 +1,215 @@
+.. java:import:: android.arch.persistence.room Entity
+
+.. java:import:: android.arch.persistence.room Ignore
+
+.. java:import:: android.arch.persistence.room PrimaryKey
+
+.. java:import:: org.json JSONException
+
+.. java:import:: org.json JSONObject
+
+.. java:import:: java.io Serializable
+
+.. java:import:: java.math BigInteger
+
+.. java:import:: java.util ArrayList
+
+User
+====
+
+.. java:package:: org.codethechange.culturemesh.models
+   :noindex:
+
+.. java:type:: @Entity public class User implements Serializable, Putable, Postable
+
+   Created by nathaniel on 11/10/17.
+
+Fields
+------
+aboutMe
+^^^^^^^
+
+.. java:field:: public String aboutMe
+   :outertype: User
+
+email
+^^^^^
+
+.. java:field:: public String email
+   :outertype: User
+
+firstName
+^^^^^^^^^
+
+.. java:field:: public String firstName
+   :outertype: User
+
+gender
+^^^^^^
+
+.. java:field:: public String gender
+   :outertype: User
+
+id
+^^
+
+.. java:field:: @PrimaryKey public long id
+   :outertype: User
+
+imgURL
+^^^^^^
+
+.. java:field:: public String imgURL
+   :outertype: User
+
+lastName
+^^^^^^^^
+
+.. java:field:: public String lastName
+   :outertype: User
+
+role
+^^^^
+
+.. java:field:: public int role
+   :outertype: User
+
+username
+^^^^^^^^
+
+.. java:field:: public String username
+   :outertype: User
+
+Constructors
+------------
+User
+^^^^
+
+.. java:constructor:: public User(long id, String firstName, String lastName, String email, String username, String imgURL, String aboutMe, String gender)
+   :outertype: User
+
+User
+^^^^
+
+.. java:constructor:: public User(JSONObject res) throws JSONException
+   :outertype: User
+
+User
+^^^^
+
+.. java:constructor:: public User()
+   :outertype: User
+
+Methods
+-------
+getEmail
+^^^^^^^^
+
+.. java:method:: public String getEmail()
+   :outertype: User
+
+getFirstName
+^^^^^^^^^^^^
+
+.. java:method:: public String getFirstName()
+   :outertype: User
+
+getImgURL
+^^^^^^^^^
+
+.. java:method:: public String getImgURL()
+   :outertype: User
+
+getLastName
+^^^^^^^^^^^
+
+.. java:method:: public String getLastName()
+   :outertype: User
+
+getPostJson
+^^^^^^^^^^^
+
+.. java:method:: public JSONObject getPostJson() throws JSONException
+   :outertype: User
+
+   Create a JSON representation of the object that conforms to the following format:
+
+   .. parsed-literal::
+
+      {
+                 "username": "string",
+                 "password": "string",
+                 "first_name": "string",
+                 "last_name": "string",
+                 "email": "string",
+                 "role": 0
+              }
+
+   This is intended to be the format used by the \ ``/user/users``\  POST endpoint. NOTE: The user's password must be set using \ :java:ref:`User.setPassword(String)`\
+
+   :throws JSONException: Unclear when this would be thrown
+   :return: JSON representation of the object
+
+getPutJson
+^^^^^^^^^^
+
+.. java:method:: public JSONObject getPutJson() throws JSONException
+   :outertype: User
+
+   Create a JSON representation of the object that conforms to the following format:
+
+   .. parsed-literal::
+
+      {
+                "id": 0,
+                "username": "string",
+                "first_name": "string",
+                "last_name": "string",
+                "email": "string",
+                "role": 0,
+                "gender": "string",
+                "about_me": "string",
+                "img_link": "string"
+              }
+
+   This is intended to be the format used by the \ ``/user/users``\  PUT endpoint
+
+   :throws JSONException: Unclear when this would be thrown
+   :return: JSON representation of the object
+
+getUsername
+^^^^^^^^^^^
+
+.. java:method:: public String getUsername()
+   :outertype: User
+
+setEmail
+^^^^^^^^
+
+.. java:method:: public void setEmail(String email)
+   :outertype: User
+
+setFirstName
+^^^^^^^^^^^^
+
+.. java:method:: public void setFirstName(String firstName)
+   :outertype: User
+
+setLastName
+^^^^^^^^^^^
+
+.. java:method:: public void setLastName(String lastName)
+   :outertype: User
+
+setPassword
+^^^^^^^^^^^
+
+.. java:method:: public void setPassword(String password)
+   :outertype: User
+
+setUsername
+^^^^^^^^^^^
+
+.. java:method:: public void setUsername(String username)
+   :outertype: User
+

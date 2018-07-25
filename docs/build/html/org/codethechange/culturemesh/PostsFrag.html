@@ -1,0 +1,440 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PostsFrag &mdash; CultureMesh Android 0.1.0-alpha documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="RVAdapter" href="RVAdapter.html" />
+    <link rel="prev" title="OnboardActivity" href="OnboardActivity.html" /> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> CultureMesh Android
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../packages.html">Android App Javadoc</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="package-index.html">org.codethechange.culturemesh</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="API.html">API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="API-Get.html">API.Get</a></li>
+<li class="toctree-l3"><a class="reference internal" href="API-InstantiationListener.html">API.InstantiationListener</a></li>
+<li class="toctree-l3"><a class="reference internal" href="API-Post.html">API.Post</a></li>
+<li class="toctree-l3"><a class="reference internal" href="API-Put.html">API.Put</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AboutActivity.html">AboutActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ApiUtils.html">ApiUtils</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ApplicationStart.html">ApplicationStart</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ChooseNearLocationActivity.html">ChooseNearLocationActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CommentsFrag.html">CommentsFrag</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CommentsFrag-OnFragmentInteractionListener.html">CommentsFrag.OnFragmentInteractionListener</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CreateEventActivity.html">CreateEventActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CreateEventActivity-DatePickerFragment.html">CreateEventActivity.DatePickerFragment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CreateEventActivity-TimePickerFragment.html">CreateEventActivity.TimePickerFragment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CreatePostActivity.html">CreatePostActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Credentials.html">Credentials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CultureMeshApplication.html">CultureMeshApplication</a></li>
+<li class="toctree-l3"><a class="reference internal" href="DatabaseTest.html">DatabaseTest</a></li>
+<li class="toctree-l3"><a class="reference internal" href="DrawerActivity.html">DrawerActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="DrawerActivity-WaitForSubscribedList.html">DrawerActivity.WaitForSubscribedList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ExploreBubblesOpenGLActivity.html">ExploreBubblesOpenGLActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FindNetworkActivity.html">FindNetworkActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FindNetworkActivity-FindLanguageFragment.html">FindNetworkActivity.FindLanguageFragment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FindNetworkActivity-FindLocationFragment.html">FindNetworkActivity.FindLocationFragment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FindNetworkActivity-SectionsPagerAdapter.html">FindNetworkActivity.SectionsPagerAdapter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FormatManager.html">FormatManager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FormatManager-IconUpdateListener.html">FormatManager.IconUpdateListener</a></li>
+<li class="toctree-l3"><a class="reference internal" href="HelpActivity.html">HelpActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListNetworksFragment.html">ListNetworksFragment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListUserEventsFragment.html">ListUserEventsFragment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListUserPostsFragment.html">ListUserPostsFragment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Listable.html">Listable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListenableEditText.html">ListenableEditText</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListenableEditText-onSelectionChangedListener.html">ListenableEditText.onSelectionChangedListener</a></li>
+<li class="toctree-l3"><a class="reference internal" href="LoginActivity.html">LoginActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="NetworkResponse.html">NetworkResponse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="NetworkSummaryAdapter.html">NetworkSummaryAdapter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="NetworkSummaryAdapter-OnNetworkTapListener.html">NetworkSummaryAdapter.OnNetworkTapListener</a></li>
+<li class="toctree-l3"><a class="reference internal" href="NetworkSummaryAdapter-PostViewHolder.html">NetworkSummaryAdapter.PostViewHolder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OnboardActivity.html">OnboardActivity</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">PostsFrag</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#fields">Fields</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#maxeventid">maxEventId</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#maxpostid">maxPostId</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#queue">queue</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#selectednetwork">selectedNetwork</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#settings">settings</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#constructors">Constructors</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#id1">PostsFrag</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#methods">Methods</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#fetchnewpage">fetchNewPage</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#onattach">onAttach</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#oncreate">onCreate</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#oncreateview">onCreateView</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ondetach">onDetach</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#onstop">onStop</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="RVAdapter.html">RVAdapter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RVAdapter-OnItemClickListener.html">RVAdapter.OnItemClickListener</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RVAdapter-PostViewHolder.html">RVAdapter.PostViewHolder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RVCommentAdapter.html">RVCommentAdapter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RVCommentAdapter-OnItemClickListener.html">RVCommentAdapter.OnItemClickListener</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RVCommentAdapter-PostReplyViewHolder.html">RVCommentAdapter.PostReplyViewHolder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RedirectableAppCompatActivity.html">RedirectableAppCompatActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Redirection.html">Redirection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SearchAdapter.html">SearchAdapter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SearchAdapter-HolderItem.html">SearchAdapter.HolderItem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SettingsActivity.html">SettingsActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SpecificPostActivity.html">SpecificPostActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="TimelineActivity.html">TimelineActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="TimelineActivity-FilterDialogFragment.html">TimelineActivity.FilterDialogFragment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="UsersListAdapter.html">UsersListAdapter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="UsersListAdapter-ViewHolder.html">UsersListAdapter.ViewHolder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ViewProfileActivity.html">ViewProfileActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ViewProfileActivity-ContributionsPager.html">ViewProfileActivity.ContributionsPager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ViewUsersModalSheetFragment.html">ViewUsersModalSheetFragment</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data/package-index.html">org.codethechange.culturemesh.data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="models/package-index.html">org.codethechange.culturemesh.models</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../swagger.html">Server API Documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">CultureMesh Android</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../../packages.html">Javadoc</a> &raquo;</li>
+        
+          <li><a href="package-index.html">org.codethechange.culturemesh</a> &raquo;</li>
+        
+      <li>PostsFrag</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/org/codethechange/culturemesh/PostsFrag.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="postsfrag">
+<h1>PostsFrag<a class="headerlink" href="#postsfrag" title="Permalink to this headline">¶</a></h1>
+<dl class="type">
+<dt id="org.codethechange.culturemesh.PostsFrag">
+public class <code class="descname">PostsFrag</code> extends <a class="reference external" href="https://developer.android.com/reference/android/android/support/v4/app/Fragment.html" title="android.support.v4.app.Fragment">Fragment</a><a class="headerlink" href="#org.codethechange.culturemesh.PostsFrag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Created by Dylan Grosz (<a class="reference external" href="mailto:dgrosz&#37;&#52;&#48;stanford&#46;edu">dgrosz<span>&#64;</span>stanford<span>&#46;</span>edu</a>) on 11/10/17.</p>
+</dd></dl>
+
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="maxeventid">
+<h3>maxEventId<a class="headerlink" href="#maxeventid" title="Permalink to this headline">¶</a></h3>
+<dl class="field">
+<dt id="org.codethechange.culturemesh.PostsFrag.maxEventId">
+ <a class="reference external" href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html" title="java.lang.String">String</a> <code class="descname">maxEventId</code><a class="headerlink" href="#org.codethechange.culturemesh.PostsFrag.maxEventId" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="maxpostid">
+<h3>maxPostId<a class="headerlink" href="#maxpostid" title="Permalink to this headline">¶</a></h3>
+<dl class="field">
+<dt id="org.codethechange.culturemesh.PostsFrag.maxPostId">
+ <a class="reference external" href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html" title="java.lang.String">String</a> <code class="descname">maxPostId</code><a class="headerlink" href="#org.codethechange.culturemesh.PostsFrag.maxPostId" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="queue">
+<h3>queue<a class="headerlink" href="#queue" title="Permalink to this headline">¶</a></h3>
+<dl class="field">
+<dt id="org.codethechange.culturemesh.PostsFrag.queue">
+ RequestQueue <code class="descname">queue</code><a class="headerlink" href="#org.codethechange.culturemesh.PostsFrag.queue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="selectednetwork">
+<h3>selectedNetwork<a class="headerlink" href="#selectednetwork" title="Permalink to this headline">¶</a></h3>
+<dl class="field">
+<dt id="org.codethechange.culturemesh.PostsFrag.selectedNetwork">
+ long <code class="descname">selectedNetwork</code><a class="headerlink" href="#org.codethechange.culturemesh.PostsFrag.selectedNetwork" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="settings">
+<h3>settings<a class="headerlink" href="#settings" title="Permalink to this headline">¶</a></h3>
+<dl class="field">
+<dt id="org.codethechange.culturemesh.PostsFrag.settings">
+ <a class="reference external" href="https://developer.android.com/reference/android/android/content/SharedPreferences.html" title="android.content.SharedPreferences">SharedPreferences</a> <code class="descname">settings</code><a class="headerlink" href="#org.codethechange.culturemesh.PostsFrag.settings" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+<div class="section" id="constructors">
+<h2>Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>PostsFrag<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<dl class="constructor">
+<dt id="org.codethechange.culturemesh.PostsFrag.PostsFrag()">
+public <code class="descname">PostsFrag</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.PostsFrag.PostsFrag()" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="fetchnewpage">
+<h3>fetchNewPage<a class="headerlink" href="#fetchnewpage" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.PostsFrag.fetchNewPage(Response.Listener)">
+public void <code class="descname">fetchNewPage</code><span class="sig-paren">(</span>Response.Listener&lt;<a class="reference external" href="http://docs.oracle.com/javase/8/docs/api/java/lang/Void.html" title="java.lang.Void">Void</a>&gt;<em> listener</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.PostsFrag.fetchNewPage(Response.Listener)" title="Permalink to this definition">¶</a></dt>
+<dd><p>If the user has exhausted the list of fetched posts/events, this will fetch another batch of posts.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>listener</strong> – the listener that will be called when we finish fetching the stuffs.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="onattach">
+<h3>onAttach<a class="headerlink" href="#onattach" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.PostsFrag.onAttach(Context)">
+public void <code class="descname">onAttach</code><span class="sig-paren">(</span><a class="reference external" href="https://developer.android.com/reference/android/android/content/Context.html" title="android.content.Context">Context</a><em> context</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.PostsFrag.onAttach(Context)" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="oncreate">
+<h3>onCreate<a class="headerlink" href="#oncreate" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.PostsFrag.onCreate(Bundle)">
+public void <code class="descname">onCreate</code><span class="sig-paren">(</span><a class="reference external" href="https://developer.android.com/reference/android/android/os/Bundle.html" title="android.os.Bundle">Bundle</a><em> savedInstanceState</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.PostsFrag.onCreate(Bundle)" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="oncreateview">
+<h3>onCreateView<a class="headerlink" href="#oncreateview" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.PostsFrag.onCreateView(LayoutInflater, ViewGroup, Bundle)">
+public <a class="reference external" href="https://developer.android.com/reference/android/android/view/View.html" title="android.view.View">View</a> <code class="descname">onCreateView</code><span class="sig-paren">(</span><a class="reference external" href="https://developer.android.com/reference/android/android/view/LayoutInflater.html" title="android.view.LayoutInflater">LayoutInflater</a><em> inflater</em>, <a class="reference external" href="https://developer.android.com/reference/android/android/view/ViewGroup.html" title="android.view.ViewGroup">ViewGroup</a><em> container</em>, <a class="reference external" href="https://developer.android.com/reference/android/android/os/Bundle.html" title="android.os.Bundle">Bundle</a><em> savedInstanceState</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.PostsFrag.onCreateView(LayoutInflater, ViewGroup, Bundle)" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="ondetach">
+<h3>onDetach<a class="headerlink" href="#ondetach" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.PostsFrag.onDetach()">
+public void <code class="descname">onDetach</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.PostsFrag.onDetach()" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="onstop">
+<h3>onStop<a class="headerlink" href="#onstop" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.PostsFrag.onStop()">
+public void <code class="descname">onStop</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.PostsFrag.onStop()" title="Permalink to this definition">¶</a></dt>
+<dd><p>This ensures that we are canceling all network requests if the user is leaving this activity. We use a RequestFilter that accepts all requests (meaning it cancels all requests)</p>
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="RVAdapter.html" class="btn btn-neutral float-right" title="RVAdapter" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="OnboardActivity.html" class="btn btn-neutral" title="OnboardActivity" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, CultureMesh.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.1.0-alpha',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

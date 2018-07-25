@@ -1,0 +1,5 @@
+# The code to document is downloaded each time by the Makefile,
+# so it does not make sense to store it in source control. It is
+# the documentation we want to track, not the code. The code is
+# tracked by its's repository's VCS.
+code

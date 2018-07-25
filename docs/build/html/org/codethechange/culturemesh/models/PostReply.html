@@ -1,0 +1,428 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PostReply &mdash; CultureMesh Android 0.1.0-alpha documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Postable" href="Postable.html" />
+    <link rel="prev" title="Post" href="Post.html" /> 
+
+  
+  <script src="../../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> CultureMesh Android
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../../packages.html">Android App Javadoc</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../package-index.html">org.codethechange.culturemesh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data/package-index.html">org.codethechange.culturemesh.data</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="package-index.html">org.codethechange.culturemesh.models</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="City.html">City</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Country.html">Country</a></li>
+<li class="toctree-l3"><a class="reference internal" href="DatabaseLocation.html">DatabaseLocation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="DatabaseNetwork.html">DatabaseNetwork</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Event.html">Event</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FeedItem.html">FeedItem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FromLocation.html">FromLocation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Language.html">Language</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Location.html">Location</a></li>
+<li class="toctree-l3"><a class="reference internal" href="NearLocation.html">NearLocation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Network.html">Network</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Place.html">Place</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Point.html">Point</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Post.html">Post</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">PostReply</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#fields">Fields</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#author">author</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#id">id</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#networkid">networkId</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#parentid">parentId</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#replydate">replyDate</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#replytext">replyText</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#userid">userId</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#constructors">Constructors</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#id1">PostReply</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#id2">PostReply</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#id3">PostReply</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#methods">Methods</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#getauthor">getAuthor</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#getpostjson">getPostJson</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#getputjson">getPutJson</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#tojson">toJSON</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Postable.html">Postable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Putable.html">Putable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Region.html">Region</a></li>
+<li class="toctree-l3"><a class="reference internal" href="User.html">User</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../swagger.html">Server API Documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">CultureMesh Android</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../../../packages.html">Javadoc</a> &raquo;</li>
+        
+          <li><a href="package-index.html">org.codethechange.culturemesh.models</a> &raquo;</li>
+        
+      <li>PostReply</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../_sources/org/codethechange/culturemesh/models/PostReply.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="postreply">
+<h1>PostReply<a class="headerlink" href="#postreply" title="Permalink to this headline">¶</a></h1>
+<dl class="type">
+<dt id="org.codethechange.culturemesh.models.PostReply">
+public class <code class="descname">PostReply</code> implements <a class="reference internal" href="Postable.html#org.codethechange.culturemesh.models.Postable" title="org.codethechange.culturemesh.models.Postable">Postable</a>, <a class="reference internal" href="Putable.html#org.codethechange.culturemesh.models.Putable" title="org.codethechange.culturemesh.models.Putable">Putable</a><a class="headerlink" href="#org.codethechange.culturemesh.models.PostReply" title="Permalink to this definition">¶</a></dt>
+<dd><p>Created by Drew Gregory on 3/4/18.</p>
+</dd></dl>
+
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="author">
+<h3>author<a class="headerlink" href="#author" title="Permalink to this headline">¶</a></h3>
+<dl class="field">
+<dt id="org.codethechange.culturemesh.models.PostReply.author">
+public <a class="reference internal" href="User.html#org.codethechange.culturemesh.models.User" title="org.codethechange.culturemesh.models.User">User</a> <code class="descname">author</code><a class="headerlink" href="#org.codethechange.culturemesh.models.PostReply.author" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="id">
+<h3>id<a class="headerlink" href="#id" title="Permalink to this headline">¶</a></h3>
+<dl class="field">
+<dt id="org.codethechange.culturemesh.models.PostReply.id">
+public long <code class="descname">id</code><a class="headerlink" href="#org.codethechange.culturemesh.models.PostReply.id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="networkid">
+<h3>networkId<a class="headerlink" href="#networkid" title="Permalink to this headline">¶</a></h3>
+<dl class="field">
+<dt id="org.codethechange.culturemesh.models.PostReply.networkId">
+public long <code class="descname">networkId</code><a class="headerlink" href="#org.codethechange.culturemesh.models.PostReply.networkId" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="parentid">
+<h3>parentId<a class="headerlink" href="#parentid" title="Permalink to this headline">¶</a></h3>
+<dl class="field">
+<dt id="org.codethechange.culturemesh.models.PostReply.parentId">
+public long <code class="descname">parentId</code><a class="headerlink" href="#org.codethechange.culturemesh.models.PostReply.parentId" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="replydate">
+<h3>replyDate<a class="headerlink" href="#replydate" title="Permalink to this headline">¶</a></h3>
+<dl class="field">
+<dt id="org.codethechange.culturemesh.models.PostReply.replyDate">
+public <a class="reference external" href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html" title="java.lang.String">String</a> <code class="descname">replyDate</code><a class="headerlink" href="#org.codethechange.culturemesh.models.PostReply.replyDate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="replytext">
+<h3>replyText<a class="headerlink" href="#replytext" title="Permalink to this headline">¶</a></h3>
+<dl class="field">
+<dt id="org.codethechange.culturemesh.models.PostReply.replyText">
+public <a class="reference external" href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html" title="java.lang.String">String</a> <code class="descname">replyText</code><a class="headerlink" href="#org.codethechange.culturemesh.models.PostReply.replyText" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="userid">
+<h3>userId<a class="headerlink" href="#userid" title="Permalink to this headline">¶</a></h3>
+<dl class="field">
+<dt id="org.codethechange.culturemesh.models.PostReply.userId">
+public long <code class="descname">userId</code><a class="headerlink" href="#org.codethechange.culturemesh.models.PostReply.userId" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+<div class="section" id="constructors">
+<h2>Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>PostReply<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<dl class="constructor">
+<dt id="org.codethechange.culturemesh.models.PostReply.PostReply(long, long, long, long, String, String)">
+public <code class="descname">PostReply</code><span class="sig-paren">(</span>long<em> id</em>, long<em> parentId</em>, long<em> userId</em>, long<em> networkId</em>, <a class="reference external" href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html" title="java.lang.String">String</a><em> replyDate</em>, <a class="reference external" href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html" title="java.lang.String">String</a><em> replyText</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.models.PostReply.PostReply(long, long, long, long, String, String)" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="id2">
+<h3>PostReply<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<dl class="constructor">
+<dt id="org.codethechange.culturemesh.models.PostReply.PostReply(JSONObject)">
+public <code class="descname">PostReply</code><span class="sig-paren">(</span>JSONObject<em> replyObj</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.models.PostReply.PostReply(JSONObject)" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="id3">
+<h3>PostReply<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<dl class="constructor">
+<dt id="org.codethechange.culturemesh.models.PostReply.PostReply()">
+public <code class="descname">PostReply</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.models.PostReply.PostReply()" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="getauthor">
+<h3>getAuthor<a class="headerlink" href="#getauthor" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.models.PostReply.getAuthor()">
+public <a class="reference internal" href="User.html#org.codethechange.culturemesh.models.User" title="org.codethechange.culturemesh.models.User">User</a> <code class="descname">getAuthor</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.models.PostReply.getAuthor()" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="getpostjson">
+<h3>getPostJson<a class="headerlink" href="#getpostjson" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.models.PostReply.getPostJson()">
+public JSONObject <code class="descname">getPostJson</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.models.PostReply.getPostJson()" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="getputjson">
+<h3>getPutJson<a class="headerlink" href="#getputjson" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.models.PostReply.getPutJson()">
+public JSONObject <code class="descname">getPutJson</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.models.PostReply.getPutJson()" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="tojson">
+<h3>toJSON<a class="headerlink" href="#tojson" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.models.PostReply.toJSON()">
+public JSONObject <code class="descname">toJSON</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.models.PostReply.toJSON()" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a JSON describing the object. The JSON will conform to the following format:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+               <span class="s2">&quot;id_parent&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+               <span class="s2">&quot;id_user&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+               <span class="s2">&quot;id_network&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+               <span class="s2">&quot;reply_text&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>
+           <span class="p">}</span>
+</pre></div>
+</div>
+<p>The resulting object is suitable for use with the <code class="docutils literal notranslate"><span class="pre">/post/{postId}/reply</span></code> POST or PUT endpoints.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Throws:</th><td class="field-body"><ul class="first simple">
+<li><strong>JSONException</strong> – Unclear when this would be thrown</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">JSON representation of the object</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Postable.html" class="btn btn-neutral float-right" title="Postable" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Post.html" class="btn btn-neutral" title="Post" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, CultureMesh.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../../',
+            VERSION:'0.1.0-alpha',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

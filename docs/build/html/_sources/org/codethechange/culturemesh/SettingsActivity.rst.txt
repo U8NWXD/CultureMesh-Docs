@@ -1,0 +1,128 @@
+.. java:import:: android.app AlertDialog
+
+.. java:import:: android.content DialogInterface
+
+.. java:import:: android.os AsyncTask
+
+.. java:import:: android.os Bundle
+
+.. java:import:: android.provider Settings
+
+.. java:import:: android.support.v7.widget LinearLayoutManager
+
+.. java:import:: android.support.v7.widget RecyclerView
+
+.. java:import:: android.support.v7.widget.helper ItemTouchHelper
+
+.. java:import:: android.view View
+
+.. java:import:: android.widget Button
+
+.. java:import:: android.widget EditText
+
+.. java:import:: android.widget ImageView
+
+.. java:import:: android.widget TextView
+
+.. java:import:: com.android.volley Request
+
+.. java:import:: com.android.volley RequestQueue
+
+.. java:import:: com.android.volley Response
+
+.. java:import:: com.android.volley.toolbox Volley
+
+.. java:import:: com.squareup.picasso Picasso
+
+.. java:import:: org.codethechange.culturemesh.models Network
+
+.. java:import:: org.codethechange.culturemesh.models Post
+
+.. java:import:: org.codethechange.culturemesh.models User
+
+.. java:import:: java.util ArrayList
+
+.. java:import:: java.util HashMap
+
+.. java:import:: java.util List
+
+SettingsActivity
+================
+
+.. java:package:: org.codethechange.culturemesh
+   :noindex:
+
+.. java:type:: public class SettingsActivity extends DrawerActivity implements NetworkSummaryAdapter.OnNetworkTapListener
+
+Fields
+------
+bio
+^^^
+
+.. java:field::  EditText bio
+   :outertype: SettingsActivity
+
+emptyText
+^^^^^^^^^
+
+.. java:field::  TextView emptyText
+   :outertype: SettingsActivity
+
+profilePicture
+^^^^^^^^^^^^^^
+
+.. java:field::  ImageView profilePicture
+   :outertype: SettingsActivity
+
+queue
+^^^^^
+
+.. java:field::  RequestQueue queue
+   :outertype: SettingsActivity
+
+rv
+^^
+
+.. java:field::  RecyclerView rv
+   :outertype: SettingsActivity
+
+updateProfile
+^^^^^^^^^^^^^
+
+.. java:field::  Button updateProfile
+   :outertype: SettingsActivity
+
+user
+^^^^
+
+.. java:field::  User user
+   :outertype: SettingsActivity
+
+Methods
+-------
+onCreate
+^^^^^^^^
+
+.. java:method:: @Override protected void onCreate(Bundle savedInstanceState)
+   :outertype: SettingsActivity
+
+onItemClick
+^^^^^^^^^^^
+
+.. java:method:: @Override public void onItemClick(View v, Network network)
+   :outertype: SettingsActivity
+
+onStop
+^^^^^^
+
+.. java:method:: @Override public void onStop()
+   :outertype: SettingsActivity
+
+   This ensures that we are canceling all network requests if the user is leaving this activity. We use a RequestFilter that accepts all requests (meaning it cancels all requests)
+
+resetAdapter
+^^^^^^^^^^^^
+
+.. java:method::  void resetAdapter()
+   :outertype: SettingsActivity
+

@@ -1,0 +1,536 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>SpecificPostActivity &mdash; CultureMesh Android 0.1.0-alpha documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" />
+    <link rel="next" title="SpecificPostActivity.PostBundleWrapper" href="SpecificPostActivity-PostBundleWrapper.html" />
+    <link rel="prev" title="SettingsActivity.UpdateProfile" href="SettingsActivity-UpdateProfile.html" /> 
+
+  
+  <script src="../../../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../../../index.html" class="icon icon-home"> CultureMesh Android
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../packages.html">Android App Javadoc</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="package-index.html">org.codethechange.culturemesh</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="API.html">API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="API-Get.html">API.Get</a></li>
+<li class="toctree-l3"><a class="reference internal" href="API-Post.html">API.Post</a></li>
+<li class="toctree-l3"><a class="reference internal" href="API-Put.html">API.Put</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AboutActivity.html">AboutActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ApiUtils.html">ApiUtils</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ApplicationStart.html">ApplicationStart</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ChooseNearLocationActivity.html">ChooseNearLocationActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CommentsFrag.html">CommentsFrag</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CommentsFrag-OnFragmentInteractionListener.html">CommentsFrag.OnFragmentInteractionListener</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CreateEventActivity.html">CreateEventActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CreateEventActivity-DatePickerFragment.html">CreateEventActivity.DatePickerFragment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CreateEventActivity-TimePickerFragment.html">CreateEventActivity.TimePickerFragment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CreatePostActivity.html">CreatePostActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CultureMeshApplication.html">CultureMeshApplication</a></li>
+<li class="toctree-l3"><a class="reference internal" href="DatabaseTest.html">DatabaseTest</a></li>
+<li class="toctree-l3"><a class="reference internal" href="DrawerActivity.html">DrawerActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="DrawerActivity-WaitForSubscribedList.html">DrawerActivity.WaitForSubscribedList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ExploreBubblesOpenGLActivity.html">ExploreBubblesOpenGLActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FindNetworkActivity.html">FindNetworkActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FindNetworkActivity-FindLanguageFragment.html">FindNetworkActivity.FindLanguageFragment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FindNetworkActivity-FindLocationFragment.html">FindNetworkActivity.FindLocationFragment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FindNetworkActivity-SectionsPagerAdapter.html">FindNetworkActivity.SectionsPagerAdapter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FormatManager.html">FormatManager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FormatManager-IconUpdateListener.html">FormatManager.IconUpdateListener</a></li>
+<li class="toctree-l3"><a class="reference internal" href="HelpActivity.html">HelpActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListNetworksFragment.html">ListNetworksFragment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListNetworksFragment-LoadSubscribedNetworks.html">ListNetworksFragment.LoadSubscribedNetworks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListUserEventsFragment.html">ListUserEventsFragment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListUserEventsFragment-LoadUserEvents.html">ListUserEventsFragment.LoadUserEvents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListUserPostsFragment.html">ListUserPostsFragment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListUserPostsFragment-LoadUserPosts.html">ListUserPostsFragment.LoadUserPosts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListenableEditText.html">ListenableEditText</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListenableEditText-onSelectionChangedListener.html">ListenableEditText.onSelectionChangedListener</a></li>
+<li class="toctree-l3"><a class="reference internal" href="LocationSearchAdapter.html">LocationSearchAdapter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="LoginActivity.html">LoginActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="NetworkResponse.html">NetworkResponse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="NetworkSummaryAdapter.html">NetworkSummaryAdapter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="NetworkSummaryAdapter-OnNetworkTapListener.html">NetworkSummaryAdapter.OnNetworkTapListener</a></li>
+<li class="toctree-l3"><a class="reference internal" href="NetworkSummaryAdapter-PostViewHolder.html">NetworkSummaryAdapter.PostViewHolder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OnboardActivity.html">OnboardActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PostsFrag.html">PostsFrag</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PostsFrag-OnFragmentInteractionListener.html">PostsFrag.OnFragmentInteractionListener</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RVAdapter.html">RVAdapter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RVAdapter-OnItemClickListener.html">RVAdapter.OnItemClickListener</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RVAdapter-PostViewHolder.html">RVAdapter.PostViewHolder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RVCommentAdapter.html">RVCommentAdapter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RVCommentAdapter-OnItemClickListener.html">RVCommentAdapter.OnItemClickListener</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RVCommentAdapter-PostReplyViewHolder.html">RVCommentAdapter.PostReplyViewHolder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RedirectableAppCompatActivity.html">RedirectableAppCompatActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Redirection.html">Redirection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SettingsActivity.html">SettingsActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SettingsActivity-LeaveNetwork.html">SettingsActivity.LeaveNetwork</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SettingsActivity-LoadSubscribedNetworks.html">SettingsActivity.LoadSubscribedNetworks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SettingsActivity-LoadUserInfo.html">SettingsActivity.LoadUserInfo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SettingsActivity-UpdateProfile.html">SettingsActivity.UpdateProfile</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">SpecificPostActivity</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#fields">Fields</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#boldbutton">boldButton</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#commentfield">commentField</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#content">content</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#cv">cv</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#edittextopened">editTextOpened</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#formatmanager">formatManager</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#images">images</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#personname">personName</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#personphoto">personPhoto</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#postbutton">postButton</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#posttypephoto">postTypePhoto</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#progressbar">progressBar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#timestamp">timestamp</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#togglebuttons">toggleButtons</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#username">username</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#writereplyview">writeReplyView</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#methods">Methods</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#closeedittextview">closeEditTextView</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#fetchcommentsatend">fetchCommentsAtEnd</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#genresizeanimation">genResizeAnimation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#oncreate">onCreate</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#openedittextview">openEditTextView</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#updateicontoggles">updateIconToggles</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="SpecificPostActivity-PostBundleWrapper.html">SpecificPostActivity.PostBundleWrapper</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SpecificPostActivity-SubmitPostReply.html">SpecificPostActivity.SubmitPostReply</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SpecificPostActivity-loadPostReplies.html">SpecificPostActivity.loadPostReplies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="TimelineActivity.html">TimelineActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="TimelineActivity-FilterDialogFragment.html">TimelineActivity.FilterDialogFragment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="TimelineActivity-JoinNetwork.html">TimelineActivity.JoinNetwork</a></li>
+<li class="toctree-l3"><a class="reference internal" href="UsersListAdapter.html">UsersListAdapter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="UsersListAdapter-ViewHolder.html">UsersListAdapter.ViewHolder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ViewProfileActivity.html">ViewProfileActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ViewProfileActivity-ContributionsPager.html">ViewProfileActivity.ContributionsPager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ViewProfileActivity-LoadUserData.html">ViewProfileActivity.LoadUserData</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ViewUsersModalSheetFragment.html">ViewUsersModalSheetFragment</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data/package-index.html">org.codethechange.culturemesh.data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="models/package-index.html">org.codethechange.culturemesh.models</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../server/swagger.html">Server API Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../server/autodoc/modules.html">Server Docstrings</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../index.html">CultureMesh Android</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../../packages.html">Javadoc</a> &raquo;</li>
+        
+          <li><a href="package-index.html">org.codethechange.culturemesh</a> &raquo;</li>
+        
+      <li>SpecificPostActivity</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../../_sources/android/javadoc/org/codethechange/culturemesh/SpecificPostActivity.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="specificpostactivity">
+<h1>SpecificPostActivity<a class="headerlink" href="#specificpostactivity" title="Permalink to this headline">¶</a></h1>
+<dl class="type">
+<dt id="org.codethechange.culturemesh.SpecificPostActivity">
+public class <code class="descname">SpecificPostActivity</code> extends <a class="reference external" href="https://developer.android.com/reference/android/android/support/v7/app/AppCompatActivity.html" title="android.support.v7.app.AppCompatActivity">AppCompatActivity</a> implements <a class="reference internal" href="FormatManager.html#org.codethechange.culturemesh.FormatManager" title="org.codethechange.culturemesh.FormatManager">FormatManager</a>.<a class="reference internal" href="FormatManager-IconUpdateListener.html#org.codethechange.culturemesh.FormatManager.IconUpdateListener" title="org.codethechange.culturemesh.FormatManager.IconUpdateListener">IconUpdateListener</a><a class="headerlink" href="#org.codethechange.culturemesh.SpecificPostActivity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<div class="section" id="fields">
+<h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="boldbutton">
+<h3>boldButton<a class="headerlink" href="#boldbutton" title="Permalink to this headline">¶</a></h3>
+<dl class="field">
+<dt id="org.codethechange.culturemesh.SpecificPostActivity.boldButton">
+ <a class="reference external" href="https://developer.android.com/reference/android/android/widget/ImageButton.html" title="android.widget.ImageButton">ImageButton</a> <code class="descname">boldButton</code><a class="headerlink" href="#org.codethechange.culturemesh.SpecificPostActivity.boldButton" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="commentfield">
+<h3>commentField<a class="headerlink" href="#commentfield" title="Permalink to this headline">¶</a></h3>
+<dl class="field">
+<dt id="org.codethechange.culturemesh.SpecificPostActivity.commentField">
+ <a class="reference internal" href="ListenableEditText.html#org.codethechange.culturemesh.ListenableEditText" title="org.codethechange.culturemesh.ListenableEditText">ListenableEditText</a> <code class="descname">commentField</code><a class="headerlink" href="#org.codethechange.culturemesh.SpecificPostActivity.commentField" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="content">
+<h3>content<a class="headerlink" href="#content" title="Permalink to this headline">¶</a></h3>
+<dl class="field">
+<dt id="org.codethechange.culturemesh.SpecificPostActivity.content">
+ <a class="reference external" href="https://developer.android.com/reference/android/android/widget/TextView.html" title="android.widget.TextView">TextView</a> <code class="descname">content</code><a class="headerlink" href="#org.codethechange.culturemesh.SpecificPostActivity.content" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="cv">
+<h3>cv<a class="headerlink" href="#cv" title="Permalink to this headline">¶</a></h3>
+<dl class="field">
+<dt id="org.codethechange.culturemesh.SpecificPostActivity.cv">
+ <a class="reference external" href="https://developer.android.com/reference/android/android/support/v7/widget/CardView.html" title="android.support.v7.widget.CardView">CardView</a> <code class="descname">cv</code><a class="headerlink" href="#org.codethechange.culturemesh.SpecificPostActivity.cv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="edittextopened">
+<h3>editTextOpened<a class="headerlink" href="#edittextopened" title="Permalink to this headline">¶</a></h3>
+<dl class="field">
+<dt id="org.codethechange.culturemesh.SpecificPostActivity.editTextOpened">
+ boolean <code class="descname">editTextOpened</code><a class="headerlink" href="#org.codethechange.culturemesh.SpecificPostActivity.editTextOpened" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="formatmanager">
+<h3>formatManager<a class="headerlink" href="#formatmanager" title="Permalink to this headline">¶</a></h3>
+<dl class="field">
+<dt id="org.codethechange.culturemesh.SpecificPostActivity.formatManager">
+ <a class="reference internal" href="FormatManager.html#org.codethechange.culturemesh.FormatManager" title="org.codethechange.culturemesh.FormatManager">FormatManager</a> <code class="descname">formatManager</code><a class="headerlink" href="#org.codethechange.culturemesh.SpecificPostActivity.formatManager" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="images">
+<h3>images<a class="headerlink" href="#images" title="Permalink to this headline">¶</a></h3>
+<dl class="field">
+<dt id="org.codethechange.culturemesh.SpecificPostActivity.images">
+ <a class="reference external" href="https://developer.android.com/reference/android/android/widget/ImageView.html" title="android.widget.ImageView">ImageView</a>[] <code class="descname">images</code><a class="headerlink" href="#org.codethechange.culturemesh.SpecificPostActivity.images" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="personname">
+<h3>personName<a class="headerlink" href="#personname" title="Permalink to this headline">¶</a></h3>
+<dl class="field">
+<dt id="org.codethechange.culturemesh.SpecificPostActivity.personName">
+ <a class="reference external" href="https://developer.android.com/reference/android/android/widget/TextView.html" title="android.widget.TextView">TextView</a> <code class="descname">personName</code><a class="headerlink" href="#org.codethechange.culturemesh.SpecificPostActivity.personName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="personphoto">
+<h3>personPhoto<a class="headerlink" href="#personphoto" title="Permalink to this headline">¶</a></h3>
+<dl class="field">
+<dt id="org.codethechange.culturemesh.SpecificPostActivity.personPhoto">
+ <a class="reference external" href="https://developer.android.com/reference/android/android/widget/ImageView.html" title="android.widget.ImageView">ImageView</a> <code class="descname">personPhoto</code><a class="headerlink" href="#org.codethechange.culturemesh.SpecificPostActivity.personPhoto" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="postbutton">
+<h3>postButton<a class="headerlink" href="#postbutton" title="Permalink to this headline">¶</a></h3>
+<dl class="field">
+<dt id="org.codethechange.culturemesh.SpecificPostActivity.postButton">
+ <a class="reference external" href="https://developer.android.com/reference/android/android/widget/Button.html" title="android.widget.Button">Button</a> <code class="descname">postButton</code><a class="headerlink" href="#org.codethechange.culturemesh.SpecificPostActivity.postButton" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="posttypephoto">
+<h3>postTypePhoto<a class="headerlink" href="#posttypephoto" title="Permalink to this headline">¶</a></h3>
+<dl class="field">
+<dt id="org.codethechange.culturemesh.SpecificPostActivity.postTypePhoto">
+ <a class="reference external" href="https://developer.android.com/reference/android/android/widget/ImageView.html" title="android.widget.ImageView">ImageView</a> <code class="descname">postTypePhoto</code><a class="headerlink" href="#org.codethechange.culturemesh.SpecificPostActivity.postTypePhoto" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="progressbar">
+<h3>progressBar<a class="headerlink" href="#progressbar" title="Permalink to this headline">¶</a></h3>
+<dl class="field">
+<dt id="org.codethechange.culturemesh.SpecificPostActivity.progressBar">
+ <a class="reference external" href="https://developer.android.com/reference/android/android/widget/ProgressBar.html" title="android.widget.ProgressBar">ProgressBar</a> <code class="descname">progressBar</code><a class="headerlink" href="#org.codethechange.culturemesh.SpecificPostActivity.progressBar" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="timestamp">
+<h3>timestamp<a class="headerlink" href="#timestamp" title="Permalink to this headline">¶</a></h3>
+<dl class="field">
+<dt id="org.codethechange.culturemesh.SpecificPostActivity.timestamp">
+ <a class="reference external" href="https://developer.android.com/reference/android/android/widget/TextView.html" title="android.widget.TextView">TextView</a> <code class="descname">timestamp</code><a class="headerlink" href="#org.codethechange.culturemesh.SpecificPostActivity.timestamp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="togglebuttons">
+<h3>toggleButtons<a class="headerlink" href="#togglebuttons" title="Permalink to this headline">¶</a></h3>
+<dl class="field">
+<dt id="org.codethechange.culturemesh.SpecificPostActivity.toggleButtons">
+ <a class="reference external" href="https://developer.android.com/reference/android/android/util/SparseArray.html" title="android.util.SparseArray">SparseArray</a>&lt;<a class="reference external" href="https://developer.android.com/reference/android/android/widget/ImageButton.html" title="android.widget.ImageButton">ImageButton</a>&gt; <code class="descname">toggleButtons</code><a class="headerlink" href="#org.codethechange.culturemesh.SpecificPostActivity.toggleButtons" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="username">
+<h3>username<a class="headerlink" href="#username" title="Permalink to this headline">¶</a></h3>
+<dl class="field">
+<dt id="org.codethechange.culturemesh.SpecificPostActivity.username">
+ <a class="reference external" href="https://developer.android.com/reference/android/android/widget/TextView.html" title="android.widget.TextView">TextView</a> <code class="descname">username</code><a class="headerlink" href="#org.codethechange.culturemesh.SpecificPostActivity.username" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="writereplyview">
+<h3>writeReplyView<a class="headerlink" href="#writereplyview" title="Permalink to this headline">¶</a></h3>
+<dl class="field">
+<dt id="org.codethechange.culturemesh.SpecificPostActivity.writeReplyView">
+ <a class="reference external" href="https://developer.android.com/reference/android/android/support/constraint/ConstraintLayout.html" title="android.support.constraint.ConstraintLayout">ConstraintLayout</a> <code class="descname">writeReplyView</code><a class="headerlink" href="#org.codethechange.culturemesh.SpecificPostActivity.writeReplyView" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="closeedittextview">
+<h3>closeEditTextView<a class="headerlink" href="#closeedittextview" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.SpecificPostActivity.closeEditTextView()">
+ void <code class="descname">closeEditTextView</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.SpecificPostActivity.closeEditTextView()" title="Permalink to this definition">¶</a></dt>
+<dd><p>When the user selects out of the text field, the view will shrink back to its original position.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="fetchcommentsatend">
+<h3>fetchCommentsAtEnd<a class="headerlink" href="#fetchcommentsatend" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.SpecificPostActivity.fetchCommentsAtEnd(int)">
+public void <code class="descname">fetchCommentsAtEnd</code><span class="sig-paren">(</span>int<em> currItem</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.SpecificPostActivity.fetchCommentsAtEnd(int)" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="genresizeanimation">
+<h3>genResizeAnimation<a class="headerlink" href="#genresizeanimation" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.SpecificPostActivity.genResizeAnimation(int, int, ConstraintLayout)">
+ void <code class="descname">genResizeAnimation</code><span class="sig-paren">(</span>int<em> oldSize</em>, int<em> newSize</em>, <a class="reference external" href="https://developer.android.com/reference/android/android/support/constraint/ConstraintLayout.html" title="android.support.constraint.ConstraintLayout">ConstraintLayout</a><em> layout</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.SpecificPostActivity.genResizeAnimation(int, int, ConstraintLayout)" title="Permalink to this definition">¶</a></dt>
+<dd><p>This little helper handles the animation involved in changing the size of the write reply view.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>oldSize</strong> – start height, in pixels.</li>
+<li><strong>newSize</strong> – final height, in pixels.</li>
+<li><strong>layout</strong> – writeReplyView</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="oncreate">
+<h3>onCreate<a class="headerlink" href="#oncreate" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.SpecificPostActivity.onCreate(Bundle)">
+protected void <code class="descname">onCreate</code><span class="sig-paren">(</span><a class="reference external" href="https://developer.android.com/reference/android/android/os/Bundle.html" title="android.os.Bundle">Bundle</a><em> savedInstanceState</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.SpecificPostActivity.onCreate(Bundle)" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="openedittextview">
+<h3>openEditTextView<a class="headerlink" href="#openedittextview" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.SpecificPostActivity.openEditTextView()">
+ void <code class="descname">openEditTextView</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.SpecificPostActivity.openEditTextView()" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function animates the bottom view to expand up, allowing for a greater text field as well as toggle buttons.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="updateicontoggles">
+<h3>updateIconToggles<a class="headerlink" href="#updateicontoggles" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.SpecificPostActivity.updateIconToggles(SparseBooleanArray, SparseArray)">
+public void <code class="descname">updateIconToggles</code><span class="sig-paren">(</span><a class="reference external" href="https://developer.android.com/reference/android/android/util/SparseBooleanArray.html" title="android.util.SparseBooleanArray">SparseBooleanArray</a><em> formTogState</em>, <a class="reference external" href="https://developer.android.com/reference/android/android/util/SparseArray.html" title="android.util.SparseArray">SparseArray</a>&lt;int[]&gt;<em> toggleIcons</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.SpecificPostActivity.updateIconToggles(SparseBooleanArray, SparseArray)" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="SpecificPostActivity-PostBundleWrapper.html" class="btn btn-neutral float-right" title="SpecificPostActivity.PostBundleWrapper" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="SettingsActivity-UpdateProfile.html" class="btn btn-neutral" title="SettingsActivity.UpdateProfile" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, CultureMesh.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../../../',
+            VERSION:'0.1.0-alpha',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../../../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

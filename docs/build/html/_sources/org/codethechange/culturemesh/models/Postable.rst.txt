@@ -1,0 +1,20 @@
+.. java:import:: org.json JSONException
+
+.. java:import:: org.json JSONObject
+
+Postable
+========
+
+.. java:package:: org.codethechange.culturemesh.models
+   :noindex:
+
+.. java:type:: public interface Postable
+
+Methods
+-------
+getPostJson
+^^^^^^^^^^^
+
+.. java:method:: public abstract JSONObject getPostJson() throws JSONException
+   :outertype: Postable
+

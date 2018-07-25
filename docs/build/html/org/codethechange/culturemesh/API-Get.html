@@ -1,0 +1,777 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>API.Get &mdash; CultureMesh Android 0.1.0-alpha documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="API.InstantiationListener" href="API-InstantiationListener.html" />
+    <link rel="prev" title="API" href="API.html" /> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> CultureMesh Android
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../packages.html">Android App Javadoc</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="package-index.html">org.codethechange.culturemesh</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="API.html">API</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">API.Get</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#methods">Methods</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#autocompletelanguage">autocompleteLanguage</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#autocompleteplace">autocompletePlace</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#event">event</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#instantiatepostreplyuser">instantiatePostReplyUser</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#instantiatepostuser">instantiatePostUser</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#language">language</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#logintoken">loginToken</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#logintokenwithcred">loginTokenWithCred</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#logintokenwithtoken">loginTokenWithToken</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#netfromfromandnear">netFromFromAndNear</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#netfromlangandnear">netFromLangAndNear</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#network">network</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#networkevents">networkEvents</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#networkpostcount">networkPostCount</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#networkposts">networkPosts</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#networkusercount">networkUserCount</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#networkusers">networkUsers</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#post">post</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#postreplies">postReplies</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#user">user</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#userevents">userEvents</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#userid">userID</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#usernetworks">userNetworks</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#userposts">userPosts</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="API-InstantiationListener.html">API.InstantiationListener</a></li>
+<li class="toctree-l3"><a class="reference internal" href="API-Post.html">API.Post</a></li>
+<li class="toctree-l3"><a class="reference internal" href="API-Put.html">API.Put</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AboutActivity.html">AboutActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ApiUtils.html">ApiUtils</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ApplicationStart.html">ApplicationStart</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ChooseNearLocationActivity.html">ChooseNearLocationActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CommentsFrag.html">CommentsFrag</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CommentsFrag-OnFragmentInteractionListener.html">CommentsFrag.OnFragmentInteractionListener</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CreateEventActivity.html">CreateEventActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CreateEventActivity-DatePickerFragment.html">CreateEventActivity.DatePickerFragment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CreateEventActivity-TimePickerFragment.html">CreateEventActivity.TimePickerFragment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CreatePostActivity.html">CreatePostActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Credentials.html">Credentials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CultureMeshApplication.html">CultureMeshApplication</a></li>
+<li class="toctree-l3"><a class="reference internal" href="DatabaseTest.html">DatabaseTest</a></li>
+<li class="toctree-l3"><a class="reference internal" href="DrawerActivity.html">DrawerActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="DrawerActivity-WaitForSubscribedList.html">DrawerActivity.WaitForSubscribedList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ExploreBubblesOpenGLActivity.html">ExploreBubblesOpenGLActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FindNetworkActivity.html">FindNetworkActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FindNetworkActivity-FindLanguageFragment.html">FindNetworkActivity.FindLanguageFragment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FindNetworkActivity-FindLocationFragment.html">FindNetworkActivity.FindLocationFragment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FindNetworkActivity-SectionsPagerAdapter.html">FindNetworkActivity.SectionsPagerAdapter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FormatManager.html">FormatManager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FormatManager-IconUpdateListener.html">FormatManager.IconUpdateListener</a></li>
+<li class="toctree-l3"><a class="reference internal" href="HelpActivity.html">HelpActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListNetworksFragment.html">ListNetworksFragment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListUserEventsFragment.html">ListUserEventsFragment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListUserPostsFragment.html">ListUserPostsFragment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Listable.html">Listable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListenableEditText.html">ListenableEditText</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ListenableEditText-onSelectionChangedListener.html">ListenableEditText.onSelectionChangedListener</a></li>
+<li class="toctree-l3"><a class="reference internal" href="LoginActivity.html">LoginActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="NetworkResponse.html">NetworkResponse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="NetworkSummaryAdapter.html">NetworkSummaryAdapter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="NetworkSummaryAdapter-OnNetworkTapListener.html">NetworkSummaryAdapter.OnNetworkTapListener</a></li>
+<li class="toctree-l3"><a class="reference internal" href="NetworkSummaryAdapter-PostViewHolder.html">NetworkSummaryAdapter.PostViewHolder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="OnboardActivity.html">OnboardActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PostsFrag.html">PostsFrag</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RVAdapter.html">RVAdapter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RVAdapter-OnItemClickListener.html">RVAdapter.OnItemClickListener</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RVAdapter-PostViewHolder.html">RVAdapter.PostViewHolder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RVCommentAdapter.html">RVCommentAdapter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RVCommentAdapter-OnItemClickListener.html">RVCommentAdapter.OnItemClickListener</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RVCommentAdapter-PostReplyViewHolder.html">RVCommentAdapter.PostReplyViewHolder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RedirectableAppCompatActivity.html">RedirectableAppCompatActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Redirection.html">Redirection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SearchAdapter.html">SearchAdapter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SearchAdapter-HolderItem.html">SearchAdapter.HolderItem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SettingsActivity.html">SettingsActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SpecificPostActivity.html">SpecificPostActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="TimelineActivity.html">TimelineActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="TimelineActivity-FilterDialogFragment.html">TimelineActivity.FilterDialogFragment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="UsersListAdapter.html">UsersListAdapter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="UsersListAdapter-ViewHolder.html">UsersListAdapter.ViewHolder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ViewProfileActivity.html">ViewProfileActivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ViewProfileActivity-ContributionsPager.html">ViewProfileActivity.ContributionsPager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ViewUsersModalSheetFragment.html">ViewUsersModalSheetFragment</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data/package-index.html">org.codethechange.culturemesh.data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="models/package-index.html">org.codethechange.culturemesh.models</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../swagger.html">Server API Documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">CultureMesh Android</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../../packages.html">Javadoc</a> &raquo;</li>
+        
+          <li><a href="package-index.html">org.codethechange.culturemesh</a> &raquo;</li>
+        
+      <li>API.Get</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/org/codethechange/culturemesh/API-Get.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="api-get">
+<h1>API.Get<a class="headerlink" href="#api-get" title="Permalink to this headline">¶</a></h1>
+<dl class="type">
+<dt id="org.codethechange.culturemesh.API.Get">
+static class <code class="descname">Get</code><a class="headerlink" href="#org.codethechange.culturemesh.API.Get" title="Permalink to this definition">¶</a></dt>
+<dd><p>The protocol for GET requests is as follows… 1. Check if cache has relevant data. If so, return it. 2. Send network request to update data.</p>
+</dd></dl>
+
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="autocompletelanguage">
+<h3>autocompleteLanguage<a class="headerlink" href="#autocompletelanguage" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.API.Get.autocompleteLanguage(RequestQueue, String, Response.Listener)">
+static void <code class="descname">autocompleteLanguage</code><span class="sig-paren">(</span>RequestQueue<em> queue</em>, <a class="reference external" href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html" title="java.lang.String">String</a><em> text</em>, Response.Listener&lt;<a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse">NetworkResponse</a>&lt;<a class="reference external" href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html" title="java.util.List">List</a>&lt;<a class="reference internal" href="models/Language.html#org.codethechange.culturemesh.models.Language" title="org.codethechange.culturemesh.models.Language">Language</a>&gt;&gt;&gt;<em> listener</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.API.Get.autocompleteLanguage(RequestQueue, String, Response.Listener)" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="autocompleteplace">
+<h3>autocompletePlace<a class="headerlink" href="#autocompleteplace" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.API.Get.autocompletePlace(RequestQueue, String, Response.Listener)">
+static void <code class="descname">autocompletePlace</code><span class="sig-paren">(</span>RequestQueue<em> queue</em>, <a class="reference external" href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html" title="java.lang.String">String</a><em> text</em>, Response.Listener&lt;<a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse">NetworkResponse</a>&lt;<a class="reference external" href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html" title="java.util.List">List</a>&lt;<a class="reference internal" href="models/Location.html#org.codethechange.culturemesh.models.Location" title="org.codethechange.culturemesh.models.Location">Location</a>&gt;&gt;&gt;<em> listener</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.API.Get.autocompletePlace(RequestQueue, String, Response.Listener)" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="event">
+<h3>event<a class="headerlink" href="#event" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.API.Get.event(long)">
+static <a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse">NetworkResponse</a>&lt;<a class="reference internal" href="models/Event.html#org.codethechange.culturemesh.models.Event" title="org.codethechange.culturemesh.models.Event">Event</a>&gt; <code class="descname">event</code><span class="sig-paren">(</span>long<em> id</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.API.Get.event(long)" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="instantiatepostreplyuser">
+<h3>instantiatePostReplyUser<a class="headerlink" href="#instantiatepostreplyuser" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.API.Get.instantiatePostReplyUser(RequestQueue, PostReply, Response.Listener)">
+static void <code class="descname">instantiatePostReplyUser</code><span class="sig-paren">(</span>RequestQueue<em> queue</em>, <a class="reference internal" href="models/PostReply.html#org.codethechange.culturemesh.models.PostReply" title="org.codethechange.culturemesh.models.PostReply">PostReply</a><em> comment</em>, Response.Listener&lt;<a class="reference internal" href="models/PostReply.html#org.codethechange.culturemesh.models.PostReply" title="org.codethechange.culturemesh.models.PostReply">PostReply</a>&gt;<em> listener</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.API.Get.instantiatePostReplyUser(RequestQueue, PostReply, Response.Listener)" title="Permalink to this definition">¶</a></dt>
+<dd><p>The API will return Post JSON Objects with id’s for the user. Often, we will want to get the user information associated with a post, such as the name and profile picture. This method allows us to instantiate this user information for each post.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>queue</strong> – The Volley RequestQueue object that handles all the request queueing.</li>
+<li><strong>comment</strong> – An already instantiated PostReply object that has a null author field but a defined userId field.</li>
+<li><strong>listener</strong> – the UI listener that will be called when we complete the task at hand.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="instantiatepostuser">
+<h3>instantiatePostUser<a class="headerlink" href="#instantiatepostuser" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.API.Get.instantiatePostUser(RequestQueue, org.codethechange.culturemesh.models.Post, Response.Listener)">
+static void <code class="descname">instantiatePostUser</code><span class="sig-paren">(</span>RequestQueue<em> queue</em>, org.codethechange.<a class="reference internal" href="package-index.html#org.codethechange.culturemesh" title="org.codethechange.culturemesh">culturemesh</a>.<a class="reference internal" href="models/package-index.html#org.codethechange.culturemesh.models" title="org.codethechange.culturemesh.models">models</a>.<a class="reference internal" href="models/Post.html#org.codethechange.culturemesh.models.Post" title="org.codethechange.culturemesh.models.Post">Post</a><em> post</em>, Response.Listener&lt;org.codethechange.<a class="reference internal" href="package-index.html#org.codethechange.culturemesh" title="org.codethechange.culturemesh">culturemesh</a>.<a class="reference internal" href="models/package-index.html#org.codethechange.culturemesh.models" title="org.codethechange.culturemesh.models">models</a>.<a class="reference internal" href="models/Post.html#org.codethechange.culturemesh.models.Post" title="org.codethechange.culturemesh.models.Post">Post</a>&gt;<em> listener</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.API.Get.instantiatePostUser(RequestQueue, org.codethechange.culturemesh.models.Post, Response.Listener)" title="Permalink to this definition">¶</a></dt>
+<dd><p>The API will return Post JSON Objects with id’s for the user. Often, we will want to get the user information associated with a post, such as the name and profile picture. This method allows us to instantiate this user information for each post.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>queue</strong> – The Volley RequestQueue object that handles all the request queueing.</li>
+<li><strong>post</strong> – An already instantiated Post object that has a null author field but a defined userId field.</li>
+<li><strong>listener</strong> – the UI listener that will be called when we complete the task at hand.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="language">
+<h3>language<a class="headerlink" href="#language" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.API.Get.language(RequestQueue, long, Response.Listener)">
+static void <code class="descname">language</code><span class="sig-paren">(</span>RequestQueue<em> queue</em>, long<em> id</em>, Response.Listener&lt;<a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse">NetworkResponse</a>&lt;<a class="reference internal" href="models/Language.html#org.codethechange.culturemesh.models.Language" title="org.codethechange.culturemesh.models.Language">Language</a>&gt;&gt;<em> listener</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.API.Get.language(RequestQueue, long, Response.Listener)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the <a class="reference internal" href="models/Language.html#org.codethechange.culturemesh.models.Language" title="org.codethechange.culturemesh.models.Language"><code class="xref java java-ref docutils literal notranslate"><span class="pre">Language</span></code></a> that has the provided ID</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>queue</strong> – Queue to which the asynchronous task will be added</li>
+<li><strong>id</strong> – ID of the <a class="reference internal" href="models/Language.html#org.codethechange.culturemesh.models.Language" title="org.codethechange.culturemesh.models.Language"><code class="xref java java-ref docutils literal notranslate"><span class="pre">Language</span></code></a> to find. Must be unique, and the same ID must be used throughout.</li>
+<li><strong>listener</strong> – Listener whose <code class="xref java java-ref docutils literal notranslate"><span class="pre">com.android.volley.Response.Listener.onResponse(Object)</span></code> is called with the <a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse"><code class="xref java java-ref docutils literal notranslate"><span class="pre">NetworkResponse</span></code></a> created by the query.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="logintoken">
+<h3>loginToken<a class="headerlink" href="#logintoken" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.API.Get.loginToken(RequestQueue, Response.Listener)">
+static void <code class="descname">loginToken</code><span class="sig-paren">(</span>RequestQueue<em> queue</em>, Response.Listener&lt;<a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse">NetworkResponse</a>&lt;<a class="reference external" href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html" title="java.lang.String">String</a>&gt;&gt;<em> listener</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.API.Get.loginToken(RequestQueue, Response.Listener)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generically get a login token.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Method</span> <span class="n">Behavior</span><span class="p">:</span>
+<span class="o">*</span> <span class="n">Email</span> <span class="ow">or</span> <span class="n">password</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">SharedPreferences</span><span class="p">:</span> <span class="n">Returns</span> <span class="n">failed</span> <span class="n">NetworkResponse</span> <span class="nb">object</span>
+  <span class="n">describing</span> <span class="n">an</span> <span class="n">authentication</span> <span class="n">error</span> <span class="k">with</span> <span class="n">R</span><span class="o">.</span><span class="n">string</span><span class="o">.</span><span class="n">authenticationError</span>
+<span class="o">*</span> <span class="n">No</span> <span class="n">token</span> <span class="n">has</span> <span class="n">been</span> <span class="n">stored</span> <span class="ow">or</span> <span class="n">token</span> <span class="n">has</span> <span class="n">expired</span><span class="p">:</span> <span class="n">Use</span> <span class="n">email</span> <span class="ow">and</span> <span class="n">password</span> <span class="n">to</span> <span class="n">get</span> <span class="n">a</span> <span class="n">token</span><span class="p">,</span>
+  <span class="n">which</span> <span class="ow">is</span> <span class="n">returned</span><span class="o">.</span> <span class="n">If</span> <span class="n">there</span> <span class="ow">is</span> <span class="n">an</span> <span class="n">error</span><span class="p">,</span> <span class="n">the</span> <span class="n">error</span> <span class="n">message</span> <span class="kn">from</span>
+  <span class="nn">API.Get.loginTokenWithCred</span> <span class="ow">is</span> <span class="n">supplied</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">NetworkResponse</span><span class="o">.</span>
+<span class="o">*</span> <span class="n">Token</span> <span class="ow">is</span> <span class="n">valid</span> <span class="n">but</span> <span class="n">within</span> <span class="n">buffer</span> <span class="n">window</span><span class="p">:</span> <span class="n">Use</span> <span class="n">current</span> <span class="n">token</span> <span class="n">to</span> <span class="n">get</span> <span class="n">a</span> <span class="n">new</span> <span class="n">one</span><span class="o">.</span> <span class="n">Store</span>
+  <span class="n">the</span> <span class="n">new</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">place</span> <span class="n">of</span> <span class="n">the</span> <span class="n">old</span> <span class="n">one</span> <span class="ow">and</span> <span class="k">return</span> <span class="n">the</span> <span class="n">new</span> <span class="n">token</span><span class="o">.</span> <span class="n">If</span> <span class="n">there</span> <span class="ow">is</span> <span class="n">an</span> <span class="n">error</span><span class="p">,</span>
+  <span class="n">the</span> <span class="n">message</span> <span class="kn">from</span> <span class="nn">API.Get.loginTokenWithToken</span> <span class="ow">is</span> <span class="n">supplied</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">NetworkResponse</span><span class="o">.</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>queue</strong> – Queue to which the asynchronous task will be added</li>
+<li><strong>listener</strong> – Listener whose onResponse method will be called when task completes</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="logintokenwithcred">
+<h3>loginTokenWithCred<a class="headerlink" href="#logintokenwithcred" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.API.Get.loginTokenWithCred(RequestQueue, String, String, Response.Listener)">
+static void <code class="descname">loginTokenWithCred</code><span class="sig-paren">(</span>RequestQueue<em> queue</em>, <a class="reference external" href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html" title="java.lang.String">String</a><em> email</em>, <a class="reference external" href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html" title="java.lang.String">String</a><em> password</em>, Response.Listener&lt;<a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse">NetworkResponse</a>&lt;<a class="reference external" href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html" title="java.lang.String">String</a>&gt;&gt;<em> listener</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.API.Get.loginTokenWithCred(RequestQueue, String, String, Response.Listener)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use a user’s login credentials to get a login token from the server. A user’s credentials consist of the email address associated with their account and their password for the CultureMesh website. If the credentials are accepted by the server, the login token generated by the server will be stored in the <a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse"><code class="xref java java-ref docutils literal notranslate"><span class="pre">NetworkResponse</span></code></a>, which will not be in a failed state, passed to the listener. If the credentials are rejected, the <a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse"><code class="xref java java-ref docutils literal notranslate"><span class="pre">NetworkResponse</span></code></a> will be in a failed state with an error message communicating the occurrence of an authentication failure and instructing the user to sign in again. The returned token will only be valid under certain conditions, as specified by the server in its documentation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>queue</strong> – Queue to which the asynchronous task will be added</li>
+<li><strong>email</strong> – Email address that will serve as the username in the attempted login</li>
+<li><strong>password</strong> – Password to use in the login attempt</li>
+<li><strong>listener</strong> – Will be called with the <a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse"><code class="xref java java-ref docutils literal notranslate"><span class="pre">NetworkResponse</span></code></a> when the operation completes</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="logintokenwithtoken">
+<h3>loginTokenWithToken<a class="headerlink" href="#logintokenwithtoken" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.API.Get.loginTokenWithToken(RequestQueue, String, Response.Listener)">
+static void <code class="descname">loginTokenWithToken</code><span class="sig-paren">(</span>RequestQueue<em> queue</em>, <a class="reference external" href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html" title="java.lang.String">String</a><em> token</em>, Response.Listener&lt;<a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse">NetworkResponse</a>&lt;<a class="reference external" href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html" title="java.lang.String">String</a>&gt;&gt;<em> listener</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.API.Get.loginTokenWithToken(RequestQueue, String, Response.Listener)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Same as <a class="reference internal" href="#org.codethechange.culturemesh.API.Get.loginTokenWithCred(RequestQueue, String, String, Response.Listener)" title="org.codethechange.culturemesh.API.Get.loginTokenWithCred(RequestQueue, String, String, Response.Listener)"><code class="xref java java-ref docutils literal notranslate"><span class="pre">API.Get.loginTokenWithCred(RequestQueue,String,String,Response.Listener)</span></code></a>, but a login token is used in place of the user’s credentials.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>queue</strong> – Queue to which the asynchronous task will be added</li>
+<li><strong>token</strong> – Login token to use to get another token</li>
+<li><strong>listener</strong> – Will be called with the <a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse"><code class="xref java java-ref docutils literal notranslate"><span class="pre">NetworkResponse</span></code></a> when the operation completes</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="netfromfromandnear">
+<h3>netFromFromAndNear<a class="headerlink" href="#netfromfromandnear" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.API.Get.netFromFromAndNear(RequestQueue, FromLocation, NearLocation, Response.Listener)">
+static void <code class="descname">netFromFromAndNear</code><span class="sig-paren">(</span>RequestQueue<em> queue</em>, <a class="reference internal" href="models/FromLocation.html#org.codethechange.culturemesh.models.FromLocation" title="org.codethechange.culturemesh.models.FromLocation">FromLocation</a><em> from</em>, <a class="reference internal" href="models/NearLocation.html#org.codethechange.culturemesh.models.NearLocation" title="org.codethechange.culturemesh.models.NearLocation">NearLocation</a><em> near</em>, Response.Listener&lt;<a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse">NetworkResponse</a>&lt;<a class="reference internal" href="models/Network.html#org.codethechange.culturemesh.models.Network" title="org.codethechange.culturemesh.models.Network">Network</a>&gt;&gt;<em> listener</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.API.Get.netFromFromAndNear(RequestQueue, FromLocation, NearLocation, Response.Listener)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the <a class="reference internal" href="models/Network.html#org.codethechange.culturemesh.models.Network" title="org.codethechange.culturemesh.models.Network"><code class="xref java java-ref docutils literal notranslate"><span class="pre">Network</span></code></a> that has the provided <a class="reference internal" href="models/FromLocation.html#org.codethechange.culturemesh.models.FromLocation" title="org.codethechange.culturemesh.models.FromLocation"><code class="xref java java-ref docutils literal notranslate"><span class="pre">FromLocation</span></code></a> and <a class="reference internal" href="models/NearLocation.html#org.codethechange.culturemesh.models.NearLocation" title="org.codethechange.culturemesh.models.NearLocation"><code class="xref java java-ref docutils literal notranslate"><span class="pre">NearLocation</span></code></a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>queue</strong> – Queue to which the asynchronous task will be added</li>
+<li><strong>from</strong> – <a class="reference internal" href="models/FromLocation.html#org.codethechange.culturemesh.models.FromLocation" title="org.codethechange.culturemesh.models.FromLocation"><code class="xref java java-ref docutils literal notranslate"><span class="pre">FromLocation</span></code></a> of the <a class="reference internal" href="models/Network.html#org.codethechange.culturemesh.models.Network" title="org.codethechange.culturemesh.models.Network"><code class="xref java java-ref docutils literal notranslate"><span class="pre">Network</span></code></a> to find</li>
+<li><strong>near</strong> – <a class="reference internal" href="models/NearLocation.html#org.codethechange.culturemesh.models.NearLocation" title="org.codethechange.culturemesh.models.NearLocation"><code class="xref java java-ref docutils literal notranslate"><span class="pre">NearLocation</span></code></a> of the <a class="reference internal" href="models/Network.html#org.codethechange.culturemesh.models.Network" title="org.codethechange.culturemesh.models.Network"><code class="xref java java-ref docutils literal notranslate"><span class="pre">Network</span></code></a> to find</li>
+<li><strong>listener</strong> – Listener whose <code class="xref java java-ref docutils literal notranslate"><span class="pre">com.android.volley.Response.Listener.onResponse(Object)</span></code> is called with the <a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse"><code class="xref java java-ref docutils literal notranslate"><span class="pre">NetworkResponse</span></code></a> created by the query.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="netfromlangandnear">
+<h3>netFromLangAndNear<a class="headerlink" href="#netfromlangandnear" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.API.Get.netFromLangAndNear(RequestQueue, Language, NearLocation, Response.Listener)">
+static void <code class="descname">netFromLangAndNear</code><span class="sig-paren">(</span>RequestQueue<em> queue</em>, <a class="reference internal" href="models/Language.html#org.codethechange.culturemesh.models.Language" title="org.codethechange.culturemesh.models.Language">Language</a><em> lang</em>, <a class="reference internal" href="models/NearLocation.html#org.codethechange.culturemesh.models.NearLocation" title="org.codethechange.culturemesh.models.NearLocation">NearLocation</a><em> near</em>, Response.Listener&lt;<a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse">NetworkResponse</a>&lt;<a class="reference internal" href="models/Network.html#org.codethechange.culturemesh.models.Network" title="org.codethechange.culturemesh.models.Network">Network</a>&gt;&gt;<em> listener</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.API.Get.netFromLangAndNear(RequestQueue, Language, NearLocation, Response.Listener)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the <a class="reference internal" href="models/Network.html#org.codethechange.culturemesh.models.Network" title="org.codethechange.culturemesh.models.Network"><code class="xref java java-ref docutils literal notranslate"><span class="pre">Network</span></code></a> that has the provided <a class="reference internal" href="models/Language.html#org.codethechange.culturemesh.models.Language" title="org.codethechange.culturemesh.models.Language"><code class="xref java java-ref docutils literal notranslate"><span class="pre">Language</span></code></a> and <a class="reference internal" href="models/NearLocation.html#org.codethechange.culturemesh.models.NearLocation" title="org.codethechange.culturemesh.models.NearLocation"><code class="xref java java-ref docutils literal notranslate"><span class="pre">NearLocation</span></code></a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>queue</strong> – Queue to which the asynchronous task will be added</li>
+<li><strong>lang</strong> – <a class="reference internal" href="models/Language.html#org.codethechange.culturemesh.models.Language" title="org.codethechange.culturemesh.models.Language"><code class="xref java java-ref docutils literal notranslate"><span class="pre">Language</span></code></a> of the <a class="reference internal" href="models/Network.html#org.codethechange.culturemesh.models.Network" title="org.codethechange.culturemesh.models.Network"><code class="xref java java-ref docutils literal notranslate"><span class="pre">Network</span></code></a> to find</li>
+<li><strong>near</strong> – <a class="reference internal" href="models/NearLocation.html#org.codethechange.culturemesh.models.NearLocation" title="org.codethechange.culturemesh.models.NearLocation"><code class="xref java java-ref docutils literal notranslate"><span class="pre">NearLocation</span></code></a> of the <a class="reference internal" href="models/Network.html#org.codethechange.culturemesh.models.Network" title="org.codethechange.culturemesh.models.Network"><code class="xref java java-ref docutils literal notranslate"><span class="pre">Network</span></code></a> to find</li>
+<li><strong>listener</strong> – Listener whose <code class="xref java java-ref docutils literal notranslate"><span class="pre">com.android.volley.Response.Listener.onResponse(Object)</span></code> is called with the <a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse"><code class="xref java java-ref docutils literal notranslate"><span class="pre">NetworkResponse</span></code></a> created by the query.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="network">
+<h3>network<a class="headerlink" href="#network" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.API.Get.network(RequestQueue, long, Response.Listener)">
+static void <code class="descname">network</code><span class="sig-paren">(</span>RequestQueue<em> queue</em>, long<em> id</em>, Response.Listener&lt;<a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse">NetworkResponse</a>&lt;<a class="reference internal" href="models/Network.html#org.codethechange.culturemesh.models.Network" title="org.codethechange.culturemesh.models.Network">Network</a>&gt;&gt;<em> callback</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.API.Get.network(RequestQueue, long, Response.Listener)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the <a class="reference internal" href="models/Network.html#org.codethechange.culturemesh.models.Network" title="org.codethechange.culturemesh.models.Network"><code class="xref java java-ref docutils literal notranslate"><span class="pre">Network</span></code></a> corresponding to the provided ID</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>queue</strong> – Queue to which the asynchronous task to get the <a class="reference internal" href="models/Network.html#org.codethechange.culturemesh.models.Network" title="org.codethechange.culturemesh.models.Network"><code class="xref java java-ref docutils literal notranslate"><span class="pre">Network</span></code></a> will be added</li>
+<li><strong>id</strong> – ID of the <a class="reference internal" href="models/Network.html#org.codethechange.culturemesh.models.Network" title="org.codethechange.culturemesh.models.Network"><code class="xref java java-ref docutils literal notranslate"><span class="pre">Network</span></code></a> to get</li>
+<li><strong>callback</strong> – Listener whose <code class="xref java java-ref docutils literal notranslate"><span class="pre">com.android.volley.Response.Listener.onResponse(Object)</span></code> is called with the <a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse"><code class="xref java java-ref docutils literal notranslate"><span class="pre">NetworkResponse</span></code></a> created by the query.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="networkevents">
+<h3>networkEvents<a class="headerlink" href="#networkevents" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.API.Get.networkEvents(RequestQueue, long, String, Response.Listener)">
+static void <code class="descname">networkEvents</code><span class="sig-paren">(</span>RequestQueue<em> queue</em>, long<em> id</em>, <a class="reference external" href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html" title="java.lang.String">String</a><em> maxId</em>, Response.Listener&lt;<a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse">NetworkResponse</a>&lt;<a class="reference external" href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html" title="java.util.List">List</a>&lt;<a class="reference internal" href="models/Event.html#org.codethechange.culturemesh.models.Event" title="org.codethechange.culturemesh.models.Event">Event</a>&gt;&gt;&gt;<em> listener</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.API.Get.networkEvents(RequestQueue, long, String, Response.Listener)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the <a class="reference internal" href="models/Event.html#org.codethechange.culturemesh.models.Event" title="org.codethechange.culturemesh.models.Event"><code class="xref java java-ref docutils literal notranslate"><span class="pre">Event</span></code></a>s corresponding to a <a class="reference internal" href="models/Network.html#org.codethechange.culturemesh.models.Network" title="org.codethechange.culturemesh.models.Network"><code class="xref java java-ref docutils literal notranslate"><span class="pre">Network</span></code></a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>queue</strong> – Queue to which the asynchronous task will be added</li>
+<li><strong>id</strong> – ID of the <a class="reference internal" href="models/Network.html#org.codethechange.culturemesh.models.Network" title="org.codethechange.culturemesh.models.Network"><code class="xref java java-ref docutils literal notranslate"><span class="pre">Network</span></code></a> whose <a class="reference internal" href="models/Event.html#org.codethechange.culturemesh.models.Event" title="org.codethechange.culturemesh.models.Event"><code class="xref java java-ref docutils literal notranslate"><span class="pre">Event</span></code></a>s will be fetched</li>
+<li><strong>listener</strong> – Listener whose <code class="xref java java-ref docutils literal notranslate"><span class="pre">com.android.volley.Response.Listener.onResponse(Object)</span></code> is called with the <a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse"><code class="xref java java-ref docutils literal notranslate"><span class="pre">NetworkResponse</span></code></a> created by the query.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="networkpostcount">
+<h3>networkPostCount<a class="headerlink" href="#networkpostcount" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.API.Get.networkPostCount(RequestQueue, long, Response.Listener)">
+static void <code class="descname">networkPostCount</code><span class="sig-paren">(</span>RequestQueue<em> queue</em>, long<em> id</em>, Response.Listener&lt;<a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse">NetworkResponse</a>&lt;<a class="reference external" href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html" title="java.lang.Long">Long</a>&gt;&gt;<em> listener</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.API.Get.networkPostCount(RequestQueue, long, Response.Listener)" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="networkposts">
+<h3>networkPosts<a class="headerlink" href="#networkposts" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.API.Get.networkPosts(RequestQueue, long, String, Response.Listener)">
+static void <code class="descname">networkPosts</code><span class="sig-paren">(</span>RequestQueue<em> queue</em>, long<em> id</em>, <a class="reference external" href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html" title="java.lang.String">String</a><em> maxId</em>, Response.Listener&lt;<a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse">NetworkResponse</a>&lt;<a class="reference external" href="http://docs.oracle.com/javase/8/docs/api/java/util/List.html" title="java.util.List">List</a>&lt;org.codethechange.<a class="reference internal" href="package-index.html#org.codethechange.culturemesh" title="org.codethechange.culturemesh">culturemesh</a>.<a class="reference internal" href="models/package-index.html#org.codethechange.culturemesh.models" title="org.codethechange.culturemesh.models">models</a>.<a class="reference internal" href="models/Post.html#org.codethechange.culturemesh.models.Post" title="org.codethechange.culturemesh.models.Post">Post</a>&gt;&gt;&gt;<em> listener</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.API.Get.networkPosts(RequestQueue, long, String, Response.Listener)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the <a class="reference internal" href="models/Post.html#org.codethechange.culturemesh.models.Post" title="org.codethechange.culturemesh.models.Post"><code class="xref java java-ref docutils literal notranslate"><span class="pre">org.codethechange.culturemesh.models.Post</span></code></a>s of a <a class="reference internal" href="models/Network.html#org.codethechange.culturemesh.models.Network" title="org.codethechange.culturemesh.models.Network"><code class="xref java java-ref docutils literal notranslate"><span class="pre">Network</span></code></a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>queue</strong> – Queue to which the asynchronous task will be added</li>
+<li><strong>id</strong> – ID of the <a class="reference internal" href="models/Network.html#org.codethechange.culturemesh.models.Network" title="org.codethechange.culturemesh.models.Network"><code class="xref java java-ref docutils literal notranslate"><span class="pre">Network</span></code></a> whose <a class="reference internal" href="models/Post.html#org.codethechange.culturemesh.models.Post" title="org.codethechange.culturemesh.models.Post"><code class="xref java java-ref docutils literal notranslate"><span class="pre">org.codethechange.culturemesh.models.Post</span></code></a>s will be returned</li>
+<li><strong>listener</strong> – Listener whose <code class="xref java java-ref docutils literal notranslate"><span class="pre">com.android.volley.Response.Listener.onResponse(Object)</span></code> is called with the <a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse"><code class="xref java java-ref docutils literal notranslate"><span class="pre">NetworkResponse</span></code></a> created by the query.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="networkusercount">
+<h3>networkUserCount<a class="headerlink" href="#networkusercount" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.API.Get.networkUserCount(RequestQueue, long, Response.Listener)">
+static void <code class="descname">networkUserCount</code><span class="sig-paren">(</span>RequestQueue<em> queue</em>, long<em> id</em>, Response.Listener&lt;<a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse">NetworkResponse</a>&lt;<a class="reference external" href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html" title="java.lang.Long">Long</a>&gt;&gt;<em> listener</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.API.Get.networkUserCount(RequestQueue, long, Response.Listener)" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="networkusers">
+<h3>networkUsers<a class="headerlink" href="#networkusers" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.API.Get.networkUsers(RequestQueue, long, Response.Listener)">
+static void <code class="descname">networkUsers</code><span class="sig-paren">(</span>RequestQueue<em> queue</em>, long<em> id</em>, Response.Listener&lt;<a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse">NetworkResponse</a>&lt;<a class="reference external" href="http://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html" title="java.util.ArrayList">ArrayList</a>&lt;<a class="reference internal" href="models/User.html#org.codethechange.culturemesh.models.User" title="org.codethechange.culturemesh.models.User">User</a>&gt;&gt;&gt;<em> listener</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.API.Get.networkUsers(RequestQueue, long, Response.Listener)" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="post">
+<h3>post<a class="headerlink" href="#post" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.API.Get.post(RequestQueue, long, Response.Listener)">
+static void <code class="descname">post</code><span class="sig-paren">(</span>RequestQueue<em> queue</em>, long<em> id</em>, Response.Listener&lt;<a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse">NetworkResponse</a>&lt;org.codethechange.<a class="reference internal" href="package-index.html#org.codethechange.culturemesh" title="org.codethechange.culturemesh">culturemesh</a>.<a class="reference internal" href="models/package-index.html#org.codethechange.culturemesh.models" title="org.codethechange.culturemesh.models">models</a>.<a class="reference internal" href="models/Post.html#org.codethechange.culturemesh.models.Post" title="org.codethechange.culturemesh.models.Post">Post</a>&gt;&gt;<em> callback</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.API.Get.post(RequestQueue, long, Response.Listener)" title="Permalink to this definition">¶</a></dt>
+<dd><p>IMPORTANT: GUIDE TO NETWORK REQUESTS EXAMPLE NETWORK REQUEST CALL – IMPORTANT!! The format for API method calls will mimic more of a callback. We are basically abstracting out doInBackground in the API methods now. View the Response.Listener&lt;&gt; as the new onPostExecute() for ASync Tasks. Notice that we now pass the Activity’s RequestQueue for EVERY method call as the first parameter. I made the id # 100 only so you can see a valid post id (1 is null). It should be postID. Also notice that we are not handling caching or working with the database AT ALL. We’ll try to tackle that later. Link: <a class="reference external" href="https://developer.android.com/training/volley/simple">https://developer.android.com/training/volley/simple</a> Migration Workflow: - Figure out how to do network request independent of Android client. First, look at the swagger documentation by going to <a class="reference external" href="https://editor.swagger.io/">https://editor.swagger.io/</a> and copying and pasting the code from <a class="reference external" href="https://github.com/alanefl/culturemesh-api/blob/master/spec_swagger.yaml">https://github.com/alanefl/culturemesh-api/blob/master/spec_swagger.yaml</a>. Notice that you will have to prefix each of your endpoints with “<a class="reference external" href="https://www.culturemesh.com/api-dev/v1">https://www.culturemesh.com/api-dev/v1</a>” Also notice that you will have to suffix each of your endpoints with a key parameter: “key=” + Credentials.APIKey (off of source control, check Slack channel for file to manually import into your project) - Test that you can do the request properly on your own. For most GET requests, you can test within your own browser, or you can Postman [<a class="reference external" href="https://www.getpostman.com/">https://www.getpostman.com/</a>] (which I personally recommend, esp. if you need a JSON request body i.e. POST requests) - Write the new API method with this signature: API.[GET/POST/PUT].[method_name] ([RequestQueue], [original params], [Response.Listener&gt;]) - The general format will be making a request. They will either be a JsonObjectRequest (if you get an object returned from API) or JsonArrayRequest (if you get array of json objects returned from API). Follow this example for the parameters. The meat of the task will be in the Response.Listener&lt;&gt; parameter for the constructor. - In this listener, you will have to convert the JSON object into our Java objects. Make sure you handle errors with JSON formats. If you get stuck on this part, make sure your keys conform to the actual keys returned on your manual requests tests with Postman. - If the API returns an ERROR status code (somewhere in the 400’s), the Response.ErrorListener() will be called. I still call the passed callback function, but set NetworkResponse’s ‘fail’ param to true. - Sometimes you will need to have multiple requests. For example, we need to get user data for each post, but we only get user id’s from the first post request. Thus, just nest another request inside the listener of the first one if you need data from the first to pass into the second (i.e. id_user from post to get user)</p>
+</dd></dl>
+
+</div>
+<div class="section" id="postreplies">
+<h3>postReplies<a class="headerlink" href="#postreplies" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.API.Get.postReplies(RequestQueue, long, Response.Listener)">
+static void <code class="descname">postReplies</code><span class="sig-paren">(</span>RequestQueue<em> queue</em>, long<em> id</em>, Response.Listener&lt;<a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse">NetworkResponse</a>&lt;<a class="reference external" href="http://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html" title="java.util.ArrayList">ArrayList</a>&lt;<a class="reference internal" href="models/PostReply.html#org.codethechange.culturemesh.models.PostReply" title="org.codethechange.culturemesh.models.PostReply">PostReply</a>&gt;&gt;&gt;<em> listener</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.API.Get.postReplies(RequestQueue, long, Response.Listener)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetch the comments of a post.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>queue</strong> – The <code class="xref java java-ref docutils literal notranslate"><span class="pre">RequestQueue</span></code> to house the network requests.</li>
+<li><strong>id</strong> – the id of the post that we want comments for.</li>
+<li><strong>listener</strong> – the listener that we will call when the request is finished.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="user">
+<h3>user<a class="headerlink" href="#user" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.API.Get.user(RequestQueue, long, Response.Listener)">
+static void <code class="descname">user</code><span class="sig-paren">(</span>RequestQueue<em> queue</em>, long<em> id</em>, Response.Listener&lt;<a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse">NetworkResponse</a>&lt;<a class="reference internal" href="models/User.html#org.codethechange.culturemesh.models.User" title="org.codethechange.culturemesh.models.User">User</a>&gt;&gt;<em> listener</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.API.Get.user(RequestQueue, long, Response.Listener)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a <a class="reference internal" href="models/User.html#org.codethechange.culturemesh.models.User" title="org.codethechange.culturemesh.models.User"><code class="xref java java-ref docutils literal notranslate"><span class="pre">User</span></code></a> object from it’s ID</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>id</strong> – ID of user to find</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">If such a user was found, it will be the payload. Otherwise, the request will be marked as failed.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="userevents">
+<h3>userEvents<a class="headerlink" href="#userevents" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.API.Get.userEvents(RequestQueue, long, String, Response.Listener)">
+static void <code class="descname">userEvents</code><span class="sig-paren">(</span>RequestQueue<em> queue</em>, long<em> id</em>, <a class="reference external" href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html" title="java.lang.String">String</a><em> role</em>, Response.Listener&lt;<a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse">NetworkResponse</a>&lt;<a class="reference external" href="http://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html" title="java.util.ArrayList">ArrayList</a>&lt;org.codethechange.<a class="reference internal" href="package-index.html#org.codethechange.culturemesh" title="org.codethechange.culturemesh">culturemesh</a>.<a class="reference internal" href="models/package-index.html#org.codethechange.culturemesh.models" title="org.codethechange.culturemesh.models">models</a>.<a class="reference internal" href="models/Event.html#org.codethechange.culturemesh.models.Event" title="org.codethechange.culturemesh.models.Event">Event</a>&gt;&gt;&gt;<em> listener</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.API.Get.userEvents(RequestQueue, long, String, Response.Listener)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the <a class="reference internal" href="models/Event.html#org.codethechange.culturemesh.models.Event" title="org.codethechange.culturemesh.models.Event"><code class="xref java java-ref docutils literal notranslate"><span class="pre">Event</span></code></a>s a <a class="reference internal" href="models/User.html#org.codethechange.culturemesh.models.User" title="org.codethechange.culturemesh.models.User"><code class="xref java java-ref docutils literal notranslate"><span class="pre">User</span></code></a> is subscribed to. This is done by searching for <a class="reference internal" href="data/EventSubscription.html#org.codethechange.culturemesh.data.EventSubscription" title="org.codethechange.culturemesh.data.EventSubscription"><code class="xref java java-ref docutils literal notranslate"><span class="pre">EventSubscription</span></code></a>s with the user’s ID (via <a class="reference internal" href="data/EventSubscriptionDao.html#org.codethechange.culturemesh.data.EventSubscriptionDao.getUserEventSubscriptions(long)" title="org.codethechange.culturemesh.data.EventSubscriptionDao.getUserEventSubscriptions(long)"><code class="xref java java-ref docutils literal notranslate"><span class="pre">EventSubscriptionDao.getUserEventSubscriptions(long)</span></code></a>) and then inflating each event from it’s ID into a full <a class="reference internal" href="models/Event.html#org.codethechange.culturemesh.models.Event" title="org.codethechange.culturemesh.models.Event"><code class="xref java java-ref docutils literal notranslate"><span class="pre">Event</span></code></a> object using <a class="reference internal" href="#org.codethechange.culturemesh.API.Get.event(long)" title="org.codethechange.culturemesh.API.Get.event(long)"><code class="xref java java-ref docutils literal notranslate"><span class="pre">API.Get.event(long)</span></code></a>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>id</strong> – ID of the <a class="reference internal" href="models/User.html#org.codethechange.culturemesh.models.User" title="org.codethechange.culturemesh.models.User"><code class="xref java java-ref docutils literal notranslate"><span class="pre">User</span></code></a> whose events are being searched for</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">List of <a class="reference internal" href="models/Event.html#org.codethechange.culturemesh.models.Event" title="org.codethechange.culturemesh.models.Event"><code class="xref java java-ref docutils literal notranslate"><span class="pre">Event</span></code></a>s to which the user is subscribed</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="userid">
+<h3>userID<a class="headerlink" href="#userid" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.API.Get.userID(RequestQueue, String, Response.Listener)">
+static void <code class="descname">userID</code><span class="sig-paren">(</span>RequestQueue<em> queue</em>, <a class="reference external" href="http://docs.oracle.com/javase/8/docs/api/java/lang/String.html" title="java.lang.String">String</a><em> email</em>, Response.Listener&lt;<a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse">NetworkResponse</a>&lt;<a class="reference external" href="http://docs.oracle.com/javase/8/docs/api/java/lang/Long.html" title="java.lang.Long">Long</a>&gt;&gt;<em> listener</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.API.Get.userID(RequestQueue, String, Response.Listener)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the ID of a <a class="reference internal" href="models/User.html#org.codethechange.culturemesh.models.User" title="org.codethechange.culturemesh.models.User"><code class="xref java java-ref docutils literal notranslate"><span class="pre">User</span></code></a> from an email address. Errors are communicated via a failed <a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse"><code class="xref java java-ref docutils literal notranslate"><span class="pre">NetworkResponse</span></code></a>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>queue</strong> – Queue to which the asynchronous task will be added</li>
+<li><strong>email</strong> – Email of user whose ID to look up</li>
+<li><strong>listener</strong> – Listener whose onResponse method is called when the task has completed</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="usernetworks">
+<h3>userNetworks<a class="headerlink" href="#usernetworks" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.API.Get.userNetworks(RequestQueue, long, Response.Listener)">
+static void <code class="descname">userNetworks</code><span class="sig-paren">(</span>RequestQueue<em> queue</em>, long<em> id</em>, Response.Listener&lt;<a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse">NetworkResponse</a>&lt;<a class="reference external" href="http://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html" title="java.util.ArrayList">ArrayList</a>&lt;<a class="reference internal" href="models/Network.html#org.codethechange.culturemesh.models.Network" title="org.codethechange.culturemesh.models.Network">Network</a>&gt;&gt;&gt;<em> listener</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.API.Get.userNetworks(RequestQueue, long, Response.Listener)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the networks a user belongs to</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>queue</strong> – RequestQueue to which the asynchronous job will be added</li>
+<li><strong>id</strong> – ID of the user whose networks will be fetched</li>
+<li><strong>listener</strong> – Listener whose <code class="xref java java-ref docutils literal notranslate"><span class="pre">com.android.volley.Response.Listener.onResponse(Object)</span></code> is called with a <a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse"><code class="xref java java-ref docutils literal notranslate"><span class="pre">NetworkResponse</span></code></a> of an <a class="reference external" href="http://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html" title="java.util.ArrayList"><code class="xref java java-ref docutils literal notranslate"><span class="pre">ArrayList</span></code></a> of <a class="reference internal" href="models/Network.html#org.codethechange.culturemesh.models.Network" title="org.codethechange.culturemesh.models.Network"><code class="xref java java-ref docutils literal notranslate"><span class="pre">Network</span></code></a>s</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="userposts">
+<h3>userPosts<a class="headerlink" href="#userposts" title="Permalink to this headline">¶</a></h3>
+<dl class="method">
+<dt id="org.codethechange.culturemesh.API.Get.userPosts(RequestQueue, long, Response.Listener)">
+static void <code class="descname">userPosts</code><span class="sig-paren">(</span>RequestQueue<em> queue</em>, long<em> id</em>, Response.Listener&lt;<a class="reference internal" href="NetworkResponse.html#org.codethechange.culturemesh.NetworkResponse" title="org.codethechange.culturemesh.NetworkResponse">NetworkResponse</a>&lt;<a class="reference external" href="http://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html" title="java.util.ArrayList">ArrayList</a>&lt;org.codethechange.<a class="reference internal" href="package-index.html#org.codethechange.culturemesh" title="org.codethechange.culturemesh">culturemesh</a>.<a class="reference internal" href="models/package-index.html#org.codethechange.culturemesh.models" title="org.codethechange.culturemesh.models">models</a>.<a class="reference internal" href="models/Post.html#org.codethechange.culturemesh.models.Post" title="org.codethechange.culturemesh.models.Post">Post</a>&gt;&gt;&gt;<em> listener</em><span class="sig-paren">)</span><a class="headerlink" href="#org.codethechange.culturemesh.API.Get.userPosts(RequestQueue, long, Response.Listener)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the <a class="reference internal" href="models/Post.html#org.codethechange.culturemesh.models.Post" title="org.codethechange.culturemesh.models.Post"><code class="xref java java-ref docutils literal notranslate"><span class="pre">org.codethechange.culturemesh.models.Post</span></code></a>s a <a class="reference internal" href="models/User.html#org.codethechange.culturemesh.models.User" title="org.codethechange.culturemesh.models.User"><code class="xref java java-ref docutils literal notranslate"><span class="pre">User</span></code></a> has made.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>queue</strong> – The <code class="xref java java-ref docutils literal notranslate"><span class="pre">RequestQueue</span></code> that will house the network requests.</li>
+<li><strong>id</strong> – The id of the <a class="reference internal" href="models/User.html#org.codethechange.culturemesh.models.User" title="org.codethechange.culturemesh.models.User"><code class="xref java java-ref docutils literal notranslate"><span class="pre">User</span></code></a>.</li>
+<li><strong>listener</strong> – The listener that the UI will call when the request is finished.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="API-InstantiationListener.html" class="btn btn-neutral float-right" title="API.InstantiationListener" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="API.html" class="btn btn-neutral" title="API" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, CultureMesh.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.1.0-alpha',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
