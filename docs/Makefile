@@ -47,6 +47,7 @@ swagger: server
 # Convert server docstrings into .rst files
 docstrings: server
 	@echo "Generating Sphinx From of Server Docstrings"
+	@rm -r $(SERVER_DOCS_PATH)/autodoc/*
 	@sphinx-apidoc -o $(SERVER_DOCS_PATH)/autodoc $(SERVER_PATH)/api
 
 # Ensure android repo on same branch as docs repo, then update with git pull
