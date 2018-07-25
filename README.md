@@ -1,6 +1,12 @@
 # CultureMesh Documentation
 This repository stores documentation for CultureMesh's Android app and API.
 
+## Dependencies
+The following dependencies may be needed to successfully generate the
+documentation using this workflow:
+* `git`
+* Python packages detailed in the pip requirements format in `requirements.txt`
+
 ## Usage
 To generate documentation, run `make html` from the `docs` directory. This will
 generate HTML documentation in `docs/build/html`, with a homepage at
