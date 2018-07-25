@@ -3,3 +3,8 @@
 # the documentation we want to track, not the code. The code is
 # tracked by its's repository's VCS.
 code
+# The cache is ephemeral and generated, so it is not tracked
+docs/cache
+# This repository is designed to be built using readthedocs, so the build
+# directory (which contains the built HTML) is unnecessary
+docs/build
