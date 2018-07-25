@@ -8,9 +8,16 @@ documentation using this workflow:
 * Python packages detailed in the pip requirements format in `requirements.txt`
 
 ## Usage
+
+### Generate HTML Documentation
 To generate documentation, run `make html` from the `docs` directory. This will
 generate HTML documentation in `docs/build/html`, with a homepage at
 `docs/build/html/index.html`.
+
+### Generate Sphinx Source Documentation Files
+Run `make sphinx-docs` to generate the `.rst` source files for `sphinx`. This
+is designed to create the files to be used with services like
+[ReadTheDocs](https://docs.readthedocs.io/).
 
 ## Definitions
 These definitions are used throughout this repository.
