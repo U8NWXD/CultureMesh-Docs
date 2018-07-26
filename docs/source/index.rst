@@ -13,7 +13,6 @@ Documentation for CultureMesh Android
 
    Android App Javadoc <android/javadoc/packages>
    Server API Documentation <server/swagger>
-   Server Docstrings <server/autodoc/modules.rst>
 
 --------------
 Code Reference
@@ -45,10 +44,11 @@ https://editor.swagger.io, go to ``File`` > ``Import URL``, and paste in
 Docstrings
 ----------
 The server code is also documented with docstrings. That documentation can be
-viewed in the following ways:
+viewed in the following way(s):
 
-* HTML format: :doc:`server/autodoc/modules`
 * The comments in the code itself.
+
+Unfortunately, an HTML format is not currently available.
 
 ------------------
 Indices and tables
