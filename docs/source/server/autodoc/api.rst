@@ -27,6 +27,14 @@ api.config module
     :undoc-members:
     :show-inheritance:
 
+api.credentials module
+----------------------
+
+.. automodule:: api.credentials
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
 api.decorators module
 ---------------------
 
